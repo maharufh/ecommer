@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-commerce Website</title>
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Google Fonts (Optional) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <h1>My E-commerce Store</h1>
+            <div class="cart" id="cartButton">
+                <span id="cart-count">0</span>
+                🛒 Cart
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Products Section -->
+        <section class="products-section">
+            <h2>Our Products</h2>
+            <div class="products-container" id="productsContainer">
+                <!-- Dynamic Products Will Be Injected Here -->
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="categories-section">
+            <h2>Categories</h2>
+            <div class="categories-container">
+                <div class="category" data-category="all">All</div>
+                <div class="category" data-category="electronics">Electronics</div>
+                <div class="category" data-category="fashion">Fashion</div>
+                <div class="category" data-category="home">Home</div>
+                <div class="category" data-category="sports">Sports</div>
+            </div>
+        </section>
+    </main>
+
+    
+    <footer>
+        <p>&copy; 2024 My E-commerce Store. All rights reserved.</p>
+    </footer>
+ 
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img id="modalImage" src="" alt="Product Image">
+            <h3 id="modalTitle">Product Title</h3>
+            <p id="modalDescription">Product Description</p>
+            <p id="modalPrice">$0.00</p>
+        </div>
+    </div>
+
+    <!-- Modal for Viewing Cart Items -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cartItems">
+                <!-- Cart Items Will Be Injected Here -->
+            </div>
+            <p>Total: $<span id="cartTotal">0.00</span></p>
+        </div>
+    </div>
+
+    <!-- Link to External JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
